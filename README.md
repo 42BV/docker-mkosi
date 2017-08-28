@@ -1,6 +1,6 @@
 [![Docker Build Statu](https://img.shields.io/docker/build/42bv/mkosi.svg)](https://hub.docker.com/r/42bv/mkosi/builds/) ![Docker Stars](https://img.shields.io/docker/stars/42bv/mkosi.svg) [![Docker Pulls](https://img.shields.io/docker/pulls/42bv/mkosi.svg)](https://hub.docker.com/r/42bv/mkosi/)
 
-[![Docker - mkosi](https://github.com/42BV/mkosi/blob/master/logo.png?raw=true)](https://github.com/systemd/mkosi)
+[![Docker - mkosi](https://github.com/42BV/docker-mkosi/blob/master/logo.png?raw=true)](https://github.com/systemd/mkosi)
 
 ## mkosi - Create legacy-free OS images
 
@@ -12,7 +12,7 @@ Project homepage: https://github.com/systemd/mkosi
 
 ### Supported tags and Dockerfile
 
-- `latest` [(Dockerfile)](https://github.com/42BV/mkosi/blob/master/Dockerfile)
+- `latest` [(Dockerfile)](https://github.com/42BV/docker-mkosi/blob/master/Dockerfile)
 
 
 ### Pull  
@@ -26,8 +26,8 @@ docker pull 42bv/mkosi:latest
 
 Clone the repository:
 ```
-git clone git@github.com:42BV/mkosi.git
-cd mkosi
+git clone git@github.com:42BV/docker-mkosi.git
+cd docker-mkosi
 ```
 
 Build the current Dockerfile and tag the image:   
@@ -47,4 +47,4 @@ docker run --tty --interactive --privileged --name=mkosi 42bv/mkosi:latest
 
 ## License
 
-Released under the [MIT license](https://github.com/42BV/mkosi/blob/master/LICENSE.md).
+Released under the [MIT license](https://github.com/42BV/docker-mkosi/blob/master/LICENSE.md).
