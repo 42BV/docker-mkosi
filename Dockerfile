@@ -17,8 +17,13 @@ RUN dnf install -y \
     util-linux-user \
     veritysetup \
     xz \
-    zypper
+    zypper \
+# Add some necesary packages to fix bugs:
+    e2fsprogs \
+    systemd-container
 
+# Add necesary dir or docker build fails
+Run mkdir -p /usr/local/lib/python3.6/site-packages/
 # Install mkosi
 RUN git clone https://github.com/systemd/mkosi.git /tmp/mkosi \
     && cd /tmp/mkosi \
