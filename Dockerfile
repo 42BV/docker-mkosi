@@ -13,6 +13,7 @@ RUN dnf install -y \
     squashfs-tools \
     gnupg \
     python3 \
+    python3-setuptools \
     tar \
     util-linux-user \
     veritysetup \

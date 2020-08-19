@@ -40,7 +40,17 @@ docker build -t mkosi .
 Must be run with the `--privileged` flag:
 
 ```
-docker run --tty --interactive --privileged --name=mkosi 42bv/mkosi:latest
+docker run --tty --interactive --privileged --volume /dev:/dev --name=mkosi 42bv/mkosi:latest
+```
+
+To run a locally built image:
+```
+docker run --tty --interactive --privileged --volume /dev:/dev --name=mkosi mkosi:latest
+```
+
+To run a locally built image, mount the current directory and remove the container after building the image:
+```
+docker run --tty --interactive --privileged --rm --volume /dev:/dev --volume $(pwd):/root/mkosi --name=mkosi mkosi:latest
 ```
 
 ---
